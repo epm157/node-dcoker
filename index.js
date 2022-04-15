@@ -25,6 +25,7 @@ const connectWithRetry = () => {
         .then(() => console.log("Successfully connected to DB"))
         .catch((e) => {
             console.log(e)
+            console.log(DB_URL)
             setTimeout(connectWithRetry, 5000)
         })
 }
