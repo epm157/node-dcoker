@@ -12,9 +12,6 @@ let redisClient = redis.createClient({
     port: REDIS_PORT
 })
 
-
-
-
 const app = express()
 app.use(cors({}))
 app.use(express.json())
