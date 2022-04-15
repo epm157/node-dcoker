@@ -8,6 +8,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: epm157/node-app
 #    ports:
 #      - "5001:3001"
     environment:
